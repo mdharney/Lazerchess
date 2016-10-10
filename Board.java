@@ -164,8 +164,14 @@ boolean wallConnects(int x, int y, int wallnum){ // Traces connecting slashes fr
 	if(x == 1 && y == 6 && wallnum == 6){ //p2 laser spot
 		return true;
 	}
+	if(x == 1 && y == 6 && wallnum == 1){
+		return false;
+	}
 	if(x == 5 && y == 0 && wallnum == 5){ //p1 laser spot
 		return true;
+	}
+	if(x == 5 && y == 0 && wallnum == 3){
+		return false;
 	}
 	if(x == 0 && wallnum == 4){ //upper wall
 		return true;
